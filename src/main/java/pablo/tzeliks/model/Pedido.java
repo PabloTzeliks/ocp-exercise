@@ -7,8 +7,8 @@ public class Pedido {
 
     private String id;
     private double valorBruto;
+    private double valorLimpo;
     private int quantidadeItens;
     private boolean isPago;
     private String emailCliente;
-    private TipoDesconto tipoDesconto;
 }
