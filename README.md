@@ -57,10 +57,10 @@ The system follows a clean, layered architecture organized into three main compo
                │
       ┌────────┴────────┬─────────────┬──────────┐
       ↓                 ↓             ↓          ↓
-┌──────────┐   ┌──────────┐   ┌──────────┐   ┌──────────┐
+┌──────────┐   ┌──────────┐   ┌──────────┐   ┌───────────┐
 │  Cupom   │   │   VIP    │   │ Sazonal  │   │Aniversario│
 │ Desconto │   │ Desconto │   │ Desconto │   │ Desconto  │
-└──────────┘   └──────────┘   └──────────┘   └──────────┘
+└──────────┘   └──────────┘   └──────────┘   └───────────┘
 ```
 
 ### Core Components
