@@ -131,7 +131,7 @@ public class DescontoFactory {
             case VIP -> new VipDesconto();
             case SAZONAL -> new SazonalDesconto();
             case ANIVERSARIO -> new AniversarioDesconto();
-            default -> throw new IllegalArgumentException("Invalid discount type: " + tipoDesconto);
+            default -> throw new IllegalArgumentException("Desconto de Tipo: " + tipoDesconto + " é inválido.");
         };
     }
 }
