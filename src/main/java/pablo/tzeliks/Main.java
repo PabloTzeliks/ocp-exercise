@@ -4,6 +4,17 @@ import pablo.tzeliks.model.Pedido;
 import pablo.tzeliks.model.TipoDesconto;
 import pablo.tzeliks.service.CalculadoraDeDesconto;
 
+/*
+
+ * Explicação Sucinta sobre a Quebra do OCP
+
+ - No modelo antigo, qualquer nova funcionalidade, quebraria a regra de Aberto para a Extensão e Fechado para a Modificação
+ - Ou seja, qualquer novo Desconto, obrigava a modificação de código diretamente na Classe, o que quebra o OCP e até o SRP
+ - Porque estariamos criando a lógica de um Desconto e ainda a Aplicação do mesmo no Pedido, isso invalida um SRP bem estabelecido
+ - Com a Separação via Strategy e Factory as Lógicas são separadas e fáceis para a extensão, e mantenabilidade do Sistema
+
+ */
+
 public class Main {
     public static void main(String[] args) {
 
