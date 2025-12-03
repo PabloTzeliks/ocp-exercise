@@ -1,9 +1,9 @@
 package pablo.tzeliks.service.discount;
 
-public class AniversarioDesconto implements Desconto {
+public class SemDesconto implements Desconto {
 
     @Override
     public double calcular(double valorBruto) {
-        return valorBruto * 0.8;
+        return valorBruto;
     }
 }
